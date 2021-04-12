@@ -1,0 +1,140 @@
+body {
+    font-family: Oswald;
+    font-style: normal;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+
+
+
+/* HEADER */
+
+header {
+    position: absolute; 
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 5px;
+}
+
+.header_content a img {
+    height: 53px;
+    width: 200px;
+}
+
+.header_tel {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* INTRO */
+
+.intro {
+    background: url(../img/intro/bcg_car_intro.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+    margin-bottom: 200px;
+}
+
+.intro_content {
+    padding-top: 205px;
+    padding-bottom: 120px;
+    position: relative;
+}
+
+.intro_car {
+    position: absolute;
+    right: 0;
+    top: 440px;
+    width: 100%;
+    max-width: 815px;
+}
+
+.intro_content h1 {
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 107px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.intro_p1 {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 53px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.intro_p2 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+
+    margin-top: 30px;
+}
+
+.intro_consultation {
+    display: inline-block;
+    padding: 15px 55px;
+    margin-top: 30px;
+    background-color: #5A0D67;
+    border-radius: 3px;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+
+    transition: background-color .2s linear;
+}
+
+.intro_consultation:hover {
+    background-color: #6c127c;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    margin-top: 75px;
+}
+
+.icons a {
+    padding: 0 5px;
+}
+
+.icons a img {
+    height: 25px;
+    transition: all .2s linear;
+}
+
+.icons a img:hover {
+    transform: scale(1.15);
+}
