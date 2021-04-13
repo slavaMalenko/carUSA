@@ -1,12 +1,55 @@
 body {
     font-family: Oswald;
     font-style: normal;
+    color: #000;
 }
 
 .container {
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
+}
+
+.consultation {
+    display: inline-block;
+    padding: 15px 55px;
+    background-color: #5A0D67;
+    border-radius: 3px;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+
+    transition: background-color .2s linear;
+}
+
+.consultation:hover {
+    background-color: #6c127c;
+}
+
+.title {
+    position: relative;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+
+    margin-bottom: 50px;
+    width: 215px;
+}
+
+.title--decor::before {
+    position: absolute;
+    content: "";
+    width: 80px; 
+    height: 2px;
+    border-radius: 2px;
+    background-color: #000;
+    top: 40%;
+    left: 110%;
 }
 
 
@@ -22,19 +65,19 @@ header {
     z-index: 1000;
 }
 
-.header_content {
+.header__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 50px 5px;
 }
 
-.header_content a img {
+.header__content a img {
     height: 53px;
     width: 200px;
 }
 
-.header_tel {
+.header__tel {
     font-weight: normal;
     font-size: 36px;
     line-height: 53px;
@@ -59,13 +102,13 @@ header {
     margin-bottom: 200px;
 }
 
-.intro_content {
+.intro__content {
+    position: relative;
     padding-top: 205px;
     padding-bottom: 120px;
-    position: relative;
 }
 
-.intro_car {
+.intro__car {
     position: absolute;
     right: 0;
     top: 440px;
@@ -73,7 +116,7 @@ header {
     max-width: 815px;
 }
 
-.intro_content h1 {
+.intro__content h1 {
     font-weight: normal;
     font-size: 72px;
     line-height: 107px;
@@ -81,7 +124,7 @@ header {
     text-transform: uppercase;
 }
 
-.intro_p1 {
+.intro-p1 {
     font-weight: normal;
     font-size: 36px;
     line-height: 53px;
@@ -89,34 +132,13 @@ header {
     text-transform: uppercase;
 }
 
-.intro_p2 {
+.intro-p2 {
     font-weight: 300;
     font-size: 18px;
     line-height: 27px;
     color: #fff;
 
-    margin-top: 30px;
-}
-
-.intro_consultation {
-    display: inline-block;
-    padding: 15px 55px;
-    margin-top: 30px;
-    background-color: #5A0D67;
-    border-radius: 3px;
-
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #fff;
-    text-decoration: none;
-
-    transition: background-color .2s linear;
-}
-
-.intro_consultation:hover {
-    background-color: #6c127c;
+    margin: 30px 0;
 }
 
 .icons {
@@ -138,3 +160,154 @@ header {
 .icons a img:hover {
     transform: scale(1.15);
 }
+
+
+
+
+
+
+
+
+/* SERVICES */
+
+.services {
+    margin-bottom: 100px;
+}
+
+.services__content {
+    display: flex;
+}
+
+.services__content_description {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.scd-h5 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #5A0D67;
+
+    margin-bottom: 15px;
+    width: 500px;
+}
+
+.scd-p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+
+    margin-bottom: 15px;
+    width: 500px;
+}
+
+.scd-p:last-child {
+    margin-bottom: 0;
+}
+
+.scd-p_margin {
+    margin-bottom: 70px;
+}
+
+.scd-p_bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+ 
+.services__content_stages {
+    width: 50%;
+}
+
+.services__list {
+    list-style: none;
+    counter-reset: my-counter;
+}
+
+.services__item {
+    position: relative;
+    counter-increment: my-counter;
+    border: 1px solid #C4C4C4;
+    margin-bottom: 12px;
+    height: 55px;
+    width: 450px;
+    padding: 10px 15px 10px 115px;
+    transition: all .2s linear;
+}
+
+.services__item:last-child {
+    margin-bottom: 0;
+}
+
+.services__item::before {
+    position: absolute;
+    content: '0' counter(my-counter);
+    left: 20px;
+    font-size: 36px;
+    line-height: 53px;
+    font-weight: 400;
+    color: #C4C4C4;
+    transform: rotate(270deg);
+    transition: all .2s linear;
+}
+
+.services__item:hover {
+    border: 1px solid #5A0D67;
+    width: 500px;
+}
+
+.services__item:hover .services__item-title {
+    color: #5A0D67;
+}
+
+.services__item:hover::before {
+    color: #5A0D67;
+}
+
+.services__item-title {
+    font-weight: 300;
+    font-size: 24px;
+
+}
+
+.services__item-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.services_button {
+    margin-top: 50px;
+}
+
+.consultation--decor {
+    position: relative;
+}
+
+.consultation--decor::before {
+    position: absolute;
+    content: "";
+    background-color: #C4C4C4;
+    height: 2px;
+    width: 70px;
+    top: 50%;
+    right: -55px;
+    transform: translateY(-50%);
+}
+
+.consultation--decor::after {
+    position: absolute;
+    content: "ЖМИ";
+    top: 50%;
+    right: -85px;
+    transform: translateY(-50%);
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #C4C4C4;
+}
+
