@@ -14,6 +14,7 @@ body {
     display: inline-block;
     padding: 15px 55px;
     background-color: #5A0D67;
+    border: 1px solid #5A0D67;
     border-radius: 3px;
 
     font-weight: 300;
@@ -23,11 +24,12 @@ body {
     color: #fff;
     text-decoration: none;
 
-    transition: background-color .2s linear;
+    transition: all .3s linear;
 }
 
 .consultation:hover {
-    background-color: #6c127c;
+    background-color: #fff;
+    color: #5A0D67;
 }
 
 .title {
@@ -51,6 +53,8 @@ body {
     top: 40%;
     left: 110%;
 }
+
+
 
 
 
