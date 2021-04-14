@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
 </head>
@@ -66,24 +68,22 @@
                     <div class="services__content_description">
                         <h5 class="scd-h5">Почему ввоз авто из США?</h5>
 
-                        <p class="scd-p">Мы сравнили рынки США с Европейскими и поняли, что покупка автомобиля в Америке
-                            выгоднее в
+                        <p class="scd-p">
+                            Мы сравнили рынки США с Европейскими и поняли, что покупка автомобиля в Америке выгоднее в
                             несколько раз, как бы парадоксально это не звучало. Это вызвано продуманной логистикой,
                             уровнем развития сервисов по оцениванию состояния авто и самим процессом покупки автомобиля.
                         </p>
 
-                        <p class="scd-p scd-p_margin">Большинство граждан США берут автомобиль в лизинг на несколько лет
-                            и все время
-                            эксплуатации
+                        <p class="scd-p scd-p_margin">
+                            Большинство граждан США берут автомобиль в лизинг на несколько лет и все время эксплуатации
                             сама лизинговая компания занимается постоянным ТО автомобиля, вследствие чего, машины из США
                             – один из лучших выборов для автолюбителей Украины.
                         </p>
 
                         <h5 class="scd-h5">Из-за чего такая низкая цена?</h5>
 
-                        <p class="scd-p scd-p_bottom">Битые автомобили из США выкупаются с аукционов страховых компаний.
-                            На этих
-                            аукционах машина
+                        <p class="scd-p scd-p_bottom">
+                            Битые автомобили из США выкупаются с аукционов страховых компаний. На этих аукционах машина
                             теряет половину цены даже из-за минимальных повреждений. Если учитывать денежные затраты, а
                             именно выкуп, доставку, таможню и ремонт, то цена аналогичного по состоянию автомобиля в
                             Украине будет выше на 35-50%, а новые будут стоить космических денег.
@@ -131,8 +131,117 @@
         </section>
         <!--SERVICES end-->
 
+        <!--ADVANTAGES start-->
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages__content">
+                    <div class="advantages__img">
+                        <img src="img/advantages/advantages_car.png" class="advantages__img-img" alt="">
+                    </div>
+
+                    <div class="advantages__text">
+                        <h2 class="title title--decor title--padding">Почему мы?</h2>
+
+                        <div class="advantages__text-case">
+                            <ul class="advantages__list">
+                                <li class="advantages__item">
+                                    <p class="advantages__item-num">650</p>
+                                    <p class="advantages__item-title">успешно доставленных авто</p>
+                                    <p class="advantages__item-text">
+                                        большой опыт пригона автомобилей из США под ключ, все клиенты остались довольны
+                                        на 100%
+                                    </p>
+                                </li>
+
+                                <li class="advantages__item">
+                                    <p class="advantages__item-num">5</p>
+                                    <p class="advantages__item-title">лет на рынке Украины</p>
+                                    <p class="advantages__item-text">
+                                        Работаем по всей территории Украины, работаем по договору с клиентами
+                                    </p>
+                                </li>
+
+                                <li class="advantages__item">
+                                    <p class="advantages__item-num">100 %</p>
+                                    <p class="advantages__item-title">доверия клиентов</p>
+                                    <p class="advantages__item-text ait--padding">
+                                        Онлайн отчетность. Вы всегда в курсе статуса подбора вашего авто. Фото и видео
+                                        отчет
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--ADVANTAGES end-->
+
+        <!--CAROUSEL start-->
+        <section class="carousel">
+            <div class="container">
+                <h2 class="title title--decor carousel-title">Пригнанные нами авто</h2>
+                <div class="carousel__inner">
+
+                    <div class="carousel__item">
+                        <div class="carousel__item-box">
+                            <img src="img/carousel/1.jpg" alt="" class="carousel__item-img">
+                            <h4 class="carousel__item-title">INFINITI QX50 2016 г.</h4>
+                            <p class="carousel__item-text">Экономия 4500 $</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel__item">
+                        <div class="carousel__item-box">
+                            <img src="img/carousel/2.jpg" alt="" class="carousel__item-img">
+                            <h4 class="carousel__item-title">TESLA MODEL 3 2018 г.</h4>
+                            <p class="carousel__item-text">Экономия 5500 $</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel__item">
+                        <div class="carousel__item-box">
+                            <img src="img/carousel/3.jpg" alt="" class="carousel__item-img">
+                            <h4 class="carousel__item-title">TESLA MODEL 3 2018 г.</h4>
+                            <p class="carousel__item-text">Экономия 5500 $</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel__item">
+                        <div class="carousel__item-box">
+                            <img src="img/carousel/1.jpg" alt="" class="carousel__item-img">
+                            <h4 class="carousel__item-title">INFINITI QX50 2016 г.</h4>
+                            <p class="carousel__item-text">Экономия 4500 $</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel__item">
+                        <div class="carousel__item-box">
+                            <img src="img/carousel/2.jpg" alt="" class="carousel__item-img">
+                            <h4 class="carousel__item-title">TESLA MODEL 3 2018 г.</h4>
+                            <p class="carousel__item-text">Экономия 5500 $</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel__item">
+                        <div class="carousel__item-box">
+                            <img src="img/carousel/3.jpg" alt="" class="carousel__item-img">
+                            <h4 class="carousel__item-title">TESLA MODEL 3 2018 г.</h4>
+                            <p class="carousel__item-text">Экономия 5500 $</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--CAROUSEL end-->
+
     </main>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

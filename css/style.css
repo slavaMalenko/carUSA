@@ -7,7 +7,8 @@ body {
 .container {
     margin: 0 auto;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1210px;
+    padding: 0 5px;
 }
 
 .consultation {
@@ -51,7 +52,7 @@ body {
     border-radius: 2px;
     background-color: #000;
     top: 40%;
-    left: 110%;
+    left: 100%;
 }
 
 
@@ -217,9 +218,7 @@ header {
 }
 
 .scd-p_bottom {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    margin: auto 0;
 }
  
 .services__content_stages {
@@ -314,4 +313,153 @@ header {
     line-height: 21px;
     color: #C4C4C4;
 }
+
+
+
+
+
+
+
+
+/* ADVANTAGES */
+
+.advantages {
+    margin-bottom: 100px;
+}
+
+.advantages__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages__img-img {
+    width: 100%;
+    max-width: 320px;
+}
+
+.advantages__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.title--padding {
+    margin-left: 185px;
+    margin-bottom: 0px;
+}
+
+.advantages__text-case {
+    background-color: #21062A;
+    width: 600px;
+    padding-left: 185px;
+    margin: auto 0 20px 0;
+}
+
+.advantages__list {
+    list-style: none;
+}
+
+.advantages__item {
+    width: 315px;
+}
+
+.advantages__item-num {
+    font-size: 36px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #fff;
+
+    padding-top: 25px;
+}
+
+.advantages__item-title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.advantages__item-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #C4C4C4;
+}
+
+.ait--padding {
+    padding-bottom: 45px;
+}
+
+
+
+
+
+
+
+/* CAROUSEL */
+
+.carousel {
+    margin-bottom: 100px;
+}
+
+.carousel-title {
+    width: 375px;
+}
+
+.carousel__inner {
+    margin: 0 -7px;
+}
+
+.carousel__item {
+    margin: 0 7px;
+}
+
+.carousel__item-box {
+    border: 1px solid #C4C4C4;
+    padding: 6px 6px 16px 6px;
+    text-align: center;
+    transition: all .3s linear;
+}
+
+
+.carousel__item-box:hover {
+    color: #fff;
+    background-color: #5A0D67;
+    border-color: #5A0D67;
+}
+
+.carousel__item-img {
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+.carousel__item-title {
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.carousel .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    list-style: none;
+}
+
+
+.carousel .slick-dots button {
+    font-size: 0;
+    border: none;
+    padding: 0;
+    margin: 0 10px;
+    background-color: #c4c4c4;
+    width: 50px;
+    height: 2px;
+}
+
+.carousel .slick-active button {
+    background-color: #5A0D67;
+    height: 4px;
+}
+
+
+
 
