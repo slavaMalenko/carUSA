@@ -1,5 +1,5 @@
 body {
-    font-family: Oswald;
+    font-family: Oswald, sans-serif;
     font-style: normal;
     color: #000;
 }
@@ -11,7 +11,7 @@ body {
     padding: 0 5px;
 }
 
-.consultation {
+.button {
     display: inline-block;
     padding: 15px 55px;
     background-color: #5A0D67;
@@ -28,7 +28,7 @@ body {
     transition: all .3s linear;
 }
 
-.consultation:hover {
+.button:hover {
     background-color: #fff;
     color: #5A0D67;
 }
@@ -100,7 +100,7 @@ header {
 /* INTRO */
 
 .intro {
-    background: url(../img/intro/bcg_car_intro.jpg) no-repeat;
+    background: url(../img/intro_footer/bcg_car_intro.jpg) no-repeat;
     background-size: cover;
     background-position: bottom center;
     background-attachment: fixed;
@@ -414,25 +414,30 @@ header {
 }
 
 .carousel__item-box {
-    border: 1px solid #C4C4C4;
-    padding: 6px 6px 16px 6px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 7px 7px 16px 7px;
     text-align: center;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 
 
 .carousel__item-box:hover {
-    color: #fff;
-    background-color: #5A0D67;
-    border-color: #5A0D67;
+    transform: scale(1.05);
 }
 
 .carousel__item-img {
     max-width: 100%;
     margin-bottom: 25px;
+    border-radius: 3px;
 }
 
 .carousel__item-title {
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.carousel__item-text {
     font-weight: 300;
     margin-bottom: 5px;
 }
@@ -463,3 +468,187 @@ header {
 
 
 
+
+
+
+
+
+
+
+/* FEEDBACK */
+
+.feedback__content {
+    display: flex;
+}
+
+.feedback__contacts {
+    width: 50%;
+}
+
+.feedback__contacts-title {
+    margin-top: 50px;
+    width: 170px;
+}
+
+.feedback__list {
+    list-style: none;
+}
+
+.feedback__list_item {
+    margin-bottom: 20px;
+}
+
+.fli--bottom {
+    margin-bottom: 60px;
+}
+
+.feedback__list_item-h {
+    color: #5A0D67;
+    font-weight: 300;
+    font-size: 18px; 
+    line-height: 27px;       
+}
+
+.feedback__list_item-text {
+    font-weight: 300;
+    font-size: 18px;  
+    line-height: 27px;
+}
+
+.feedback__list_item-tel {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 18px; 
+    color: #000;
+    line-height: 27px;
+}
+
+.feedback__form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #21062A;
+    align-items: center;
+}
+
+.feedback__form-title {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    width: 280px;
+    color: #fff;
+    transform: translateX(-15%);
+}
+
+.feedback-title--decor::before {
+    position: absolute;
+    content: "";
+    width: 80px; 
+    height: 2px;
+    border-radius: 2px;
+    background-color: #fff;
+    top: 40%;
+    left: 100%;
+}
+
+.contacts__input {
+    font-family: Oswald, sans-serif;
+    display: block;
+    width: 450px;
+    height: 75px;
+    margin-bottom: 12px;
+    background-color: transparent;
+
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.contacts__btn {
+    font-family: Oswald, sans-serif;
+    display: inline-block;
+    margin-top: 68px;
+    padding: 15px 55px;
+    background-color: #5A0D67;
+    border: 0;
+    border-radius: 3px;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+
+    transition: all .3s linear;
+}
+
+.contacts__btn:hover {
+    background-color: #fff;
+    color: #5A0D67;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #21062A;
+    padding: 25px 0;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo {
+    display: inline-block;
+    width: 33.3333333%;
+    text-align: left;
+}
+
+.footer__icons {
+    width: 33.3333333%;
+    text-align: center;
+}
+
+.footer__icons a {
+    padding: 0 2px;
+}
+
+.footer__icons a img {
+    height: 25px;
+    transition: all .2s linear;
+}
+
+.footer__icons a img:hover {
+    transform: scale(1.15);
+}
+
+.footer__confidentiality {
+    width: 33.3333333%;
+
+    text-align: right;
+}
+
+.confidentiality {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+.confidentiality:hover {
+    color: rgb(230, 230, 230);
+}
