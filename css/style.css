@@ -4,11 +4,14 @@ body {
     color: #000;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .container {
     margin: 0 auto;
     width: 100%;
-    max-width: 1210px;
-    padding: 0 5px;
+    max-width: 1220px;
 }
 
 .button {
@@ -68,6 +71,7 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
+    padding: 0 10px;
 }
 
 .header__content {
@@ -105,6 +109,7 @@ header {
     background-position: bottom center;
     background-attachment: fixed;
     margin-bottom: 200px;
+    padding: 0 10px;
 }
 
 .intro__content {
@@ -177,6 +182,7 @@ header {
 
 .services {
     margin-bottom: 100px;
+    padding: 0 10px;
 }
 
 .services__content {
@@ -188,25 +194,32 @@ header {
     width: 50%;
     display: flex;
     flex-direction: column;
+    padding-right: 40px;
 }
 
 .scd-h5 {
     font-weight: 300;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 17px;
+    line-height: 22px;
     color: #5A0D67;
 
     margin-bottom: 15px;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.scd-h5--bottom {
+    margin: auto 0;
 }
 
 .scd-p {
     font-weight: 300;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 17px;
+    line-height: 22px;
 
     margin-bottom: 15px;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
 
 .scd-p:last-child {
@@ -235,7 +248,6 @@ header {
     counter-increment: my-counter;
     border: 1px solid #C4C4C4;
     margin-bottom: 12px;
-    height: 55px;
     width: 450px;
     padding: 10px 15px 10px 115px;
     transition: all .2s linear;
@@ -349,7 +361,7 @@ header {
 
 .advantages__text-case {
     background-color: #21062A;
-    width: 600px;
+    width: 785px;
     padding-left: 185px;
     margin: auto 0 20px 0;
 }
@@ -529,6 +541,7 @@ header {
     width: 50%;
     background-color: #21062A;
     align-items: center;
+    padding: 0 5px;
 }
 
 .feedback__form-title {
@@ -553,7 +566,8 @@ header {
 .contacts__input {
     font-family: Oswald, sans-serif;
     display: block;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 75px;
     margin-bottom: 12px;
     background-color: transparent;
@@ -651,4 +665,665 @@ footer {
 
 .confidentiality:hover {
     color: rgb(230, 230, 230);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1250px) {
+    .services__item:hover {
+        width: 100%;
+    }
+
+
+    .advantages__img {
+        display: none;
+    }
+
+    .advantages__text {
+        width: 100%;
+    }
+
+    .advantages__text-case {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .advantages__list {
+        display: flex;
+    }
+
+    .advantages__item {
+        width: 33.33333%;
+        padding: 0 20px;
+    }
+
+    .advantages__item-num {
+        font-size: 32px;
+    }
+
+    .advantages__item-title {
+        font-size: 19px;
+    }
+
+    .advantages__item-text {
+        font-size: 14px;
+    }
+
+    .ait--padding {
+        padding-bottom: 30px;
+    }
+
+
+
+
+    .carousel-title {
+        margin-bottom: 15px;
+        padding-left: 15px;
+        font-size: 36px;
+        width: 400px;
+    }
+
+
+
+
+    .feedback__contacts {
+        width: 30%;
+        padding: 0 10px;
+    }
+
+    .feedback__form {
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+
+    .title {
+        font-size: 33px;
+    }
+
+    .header__content {
+        margin: 35px 5px;
+    }
+
+    .header__tel {
+        font-size: 30px;
+    }
+
+
+
+    .intro {
+        margin-bottom: 150px;
+    }
+
+    .intro__car {
+        width: 70%;
+        top: 470px;
+    }
+
+
+
+
+
+
+
+    .scd-p {
+        font-size: 14px;
+    }
+
+    .services__item {
+        width: 100%;
+    }
+
+    .services__item::before {
+        font-size: 32px;
+        line-height: 47px;
+    }
+
+    .services__item-title {
+        font-size: 20px;
+    }
+
+    .services__item-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+
+
+
+
+    .carousel__inner {
+        margin: 0px;
+    }
+
+
+
+    .feedback__contacts-title {
+        width: 155px;
+    }
+}
+
+
+
+
+
+@media (max-width: 850px) {
+
+    .services__keep {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services__content {
+        flex-wrap: wrap;
+    }
+
+    .services__content_stages {
+        order: -1;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .services__item {
+        padding: 10px 15px 10px 15px;
+        width: 100%;
+    }
+
+    .services__item:hover {
+        width: 100%;
+    }
+
+    .services__content_description {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .scd-h5 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .scd-h5--bottom {
+        margin-bottom: 15px;
+    }
+
+    .scd-p {
+        font-size: 13px;
+        max-width: 100%;
+    }
+
+    .scd-p_margin {
+        margin-bottom: 25px;
+    }
+
+    .services_button {
+        text-align: center;
+    }
+
+
+
+
+    .advantages {
+        margin-bottom: 45px;
+    }
+
+    .title--padding {
+        margin-left: 40px;
+        margin-bottom: 15px;
+    }
+
+    .advantages__list {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advantages__item {
+        width: 100%;
+    }
+
+
+
+
+
+    .carousel {
+        margin-bottom: 50px;
+    }
+
+    .carousel-title {
+        margin-bottom: 10px;
+        padding-left: 15px;
+    }
+
+    .carousel .slick-dots {
+        margin-top: 15px;
+    }
+
+
+
+
+
+    .feedback__contacts-title {
+        width: 190px;
+        margin-left: -65px;
+    }
+
+    .feedback__content {
+        flex-wrap: wrap;
+    }
+
+    .feedback__contacts {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feedback__form {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+
+    .header__content a img {
+        width: 165px;
+    }
+
+    .header__tel {
+        font-size: 20px;
+    }
+
+
+
+
+    .intro {
+        margin-bottom: 180px;
+    }
+
+    .intro__content {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+
+    .intro__car {
+        top: 380px;
+    }
+
+    .intro__content h1 {
+        font-size: 45px;
+        line-height: 70px;
+    }
+
+    .intro-p1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .intro-p2 {
+        font-size: 15px;
+        line-height: 20px;
+        margin: 25px 0;
+    }
+
+    .icons {
+        margin-top: 20px;
+    }
+
+    .icons a img {
+        height: 20px;
+    }
+
+
+
+
+    .services_button {
+        margin-top: 40px;
+    }
+}
+
+
+
+
+
+@media (max-width: 650px) {
+
+    footer {
+        padding: 60px 0 5px 0;
+    }
+
+    .footer__content {
+        flex-direction: column;
+    }
+
+    .footer__logo {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer__icons {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer__confidentiality {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    .title {
+        margin-bottom: 5px;
+        font-size: 24px;
+        width: 150px;
+    }
+
+    .title--decor::before {
+        width: 50px;
+        height: 1px;
+        left: 100%;
+    }
+
+    .intro {
+        margin-bottom: 120px;
+    }
+
+
+
+
+    .services {
+        margin-bottom: 65px;
+    }
+
+
+
+
+    .advantages__text {
+        align-items: center;
+    }
+
+    .title--padding {
+        margin-left: 0;
+    }
+
+
+
+
+
+    .carousel-title {
+        font-size: 25px;
+        width: 285px;
+    }
+
+    .carousel__item-img {
+        width: 100%;
+    }
+
+
+
+
+
+    .feedback__contacts-title {
+        font-size: 30px;
+    }
+
+    .feedback__form-title {
+        font-size: 30px;
+        width: 260px;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .header__content {
+        margin: 15px 5px;
+    }
+
+    .header__content a img {
+        width: 125px;
+    }
+
+    .header__tel {
+        font-size: 15px;
+    }
+
+
+
+    .intro {
+        margin-bottom: 110px;
+    }
+
+    .intro__car {
+        width: 75%;
+        top: 390px;
+    }
+
+    .intro__content {
+        padding-top: 128px;
+        padding-bottom: 140px;
+        text-align: center;
+    }
+
+    .intro__content h1 {
+        font-size: 32px;
+        line-height: 60px;
+    }
+
+    .intro-p1 {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .intro-p2 {
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .button {
+        padding: 10px 35px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .icons {
+        width: 100%;
+    }
+
+    .icons a img {
+        height: 17px;
+    }
+
+
+
+    .services__item::before {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .services__item-title {
+        font-size: 15px;
+    }
+
+    .services__item-text {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .scd-p {
+        font-size: 12px;
+    }
+
+    .services_button {
+        margin-top: 30px;
+    }
+
+    .consultation--decor::before {
+        width: 50px;
+        right: -40px;
+    }
+
+    .consultation--decor::after {
+        right: -72px;
+    }
+
+
+
+
+    .carousel .slick-dots {
+        margin-top: 0px;
+    }
+
+    .carousel .slick-dots button {
+        margin: 0 5px;
+        width: 20px;
+        height: 1px;
+    }
+
+    .carousel .slick-active button {
+        height: 2px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 360px) {
+
+    .title {
+        margin-bottom: 5px;
+    }
+
+    .intro {
+        margin-bottom: 100px;
+    }
+
+
+
+
+    .header__content a img {
+        width: 100px;
+    }
+
+    .header__tel {
+        font-size: 12px;
+    }
+
+
+
+    .intro__car {
+        top: 475px;
+        width: 90%;
+    }
+
+    .intro__content h1 {
+        font-size: 45px;
+    }
+
+
+
+
+    .services__item {
+        margin-bottom: 7px;
+    }
+
+    .consultation--decor::before {
+        width: 40px;
+        right: -25px;
+    }
+
+    .consultation--decor::after {
+        right: -55px;
+    }
+
+
+
+
+    .carousel-title {
+        font-size: 21px;
+        width: 245px;
+    }
+
+
+
+
+    .feedback__form-title {
+        font-size: 25px;
+        width: 210px;
+        margin-bottom: 15px;
+    }
+
+    .feedback-title--decor::before {
+        width: 60px;
+        height: 1px;
+        top: 45%;
+    }
+
+    .contacts__input {
+        font-size: 14px;
+        height: 60px;
+    }
+
+    .contacts__btn {
+        margin-top: 30px;
+    }
 }
