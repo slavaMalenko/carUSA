@@ -100,6 +100,16 @@ header {
 
 
 
+.main {
+    margin: -2px 0;
+}
+
+
+
+
+
+
+
 
 /* INTRO */
 
@@ -118,7 +128,7 @@ header {
     padding-bottom: 120px;
 }
 
-.intro__car {
+.intro-car {
     position: absolute;
     right: 0;
     top: 440px;
@@ -226,11 +236,11 @@ header {
     margin-bottom: 0;
 }
 
-.scd-p_margin {
+.scd-p--margin {
     margin-bottom: 70px;
 }
 
-.scd-p_bottom {
+.scd-p--bottom {
     margin: auto 0;
 }
  
@@ -294,7 +304,7 @@ header {
     line-height: 30px;
 }
 
-.services_button {
+.services__button {
     margin-top: 50px;
 }
 
@@ -359,7 +369,7 @@ header {
     margin-bottom: 0px;
 }
 
-.advantages__text-case {
+.advantages__text_case {
     background-color: #21062A;
     width: 785px;
     padding-left: 185px;
@@ -425,7 +435,7 @@ header {
     margin: 0 7px;
 }
 
-.carousel__item-box {
+.carousel__item_box {
     border: 1px solid transparent;
     border-radius: 3px;
     padding: 7px 7px 16px 7px;
@@ -434,7 +444,7 @@ header {
 }
 
 
-.carousel__item-box:hover {
+.carousel__item_box:hover {
     transform: scale(1.05);
 }
 
@@ -691,7 +701,7 @@ footer {
         width: 100%;
     }
 
-    .advantages__text-case {
+    .advantages__text_case {
         width: 100%;
         padding: 0 20px;
     }
@@ -774,7 +784,7 @@ footer {
         margin-bottom: 150px;
     }
 
-    .intro__car {
+    .intro-car {
         width: 70%;
         top: 470px;
     }
@@ -873,11 +883,11 @@ footer {
         max-width: 100%;
     }
 
-    .scd-p_margin {
+    .scd-p--margin {
         margin-bottom: 25px;
     }
 
-    .services_button {
+    .services__button {
         text-align: center;
     }
 
@@ -978,7 +988,7 @@ footer {
         padding-bottom: 100px;
     }
 
-    .intro__car {
+    .intro-car {
         top: 380px;
     }
 
@@ -1009,7 +1019,7 @@ footer {
 
 
 
-    .services_button {
+    .services__button {
         margin-top: 40px;
     }
 }
@@ -1105,12 +1115,42 @@ footer {
 
 
 
-    .feedback {
-        margin-bottom: ;
-    }
 
     .feedback__contacts-title {
-        font-size: 30px;
+        font-size: 23px;
+        width: 135px;
+    }
+
+    .feedback__contacts-case {
+        padding-bottom: 20px;
+    }
+
+    .fli--bottom {
+        margin-bottom: 35px;
+    }
+
+    .feedback__list_item {
+        margin-bottom: 10px;
+    }
+
+    .feedback__list_item-h {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .feedback__list_item-text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .feedback__list_item-text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .feedback__list_item-tel {
+        font-size: 15px;
+        line-height: 24px;
     }
 
     .feedback__form {
@@ -1137,7 +1177,7 @@ footer {
 
 
     footer {
-        padding: 105px 0 5px 0;
+        padding: 165px 0 5px 0;
     }
 
     .footer__logo {
@@ -1149,7 +1189,7 @@ footer {
     }
 
     .footer__icons {
-        margin-bottom: 45px;
+        margin-bottom: 72px;
     }
 
     .footer__confidentiality {
@@ -1185,7 +1225,7 @@ footer {
         margin-bottom: 110px;
     }
 
-    .intro__car {
+    .intro-car {
         width: 75%;
         top: 390px;
     }
@@ -1245,7 +1285,7 @@ footer {
         font-size: 12px;
     }
 
-    .services_button {
+    .services__button {
         margin-top: 30px;
     }
 
@@ -1311,7 +1351,7 @@ footer {
 
 
 
-    .intro__car {
+    .intro-car {
         top: 475px;
         width: 90%;
     }
