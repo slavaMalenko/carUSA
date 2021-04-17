@@ -1105,14 +1105,55 @@ footer {
 
 
 
+    .feedback {
+        margin-bottom: ;
+    }
+
     .feedback__contacts-title {
         font-size: 30px;
     }
 
+    .feedback__form {
+        padding: 0px 42px;
+    }
+
     .feedback__form-title {
-        font-size: 30px;
-        width: 260px;
+        font-size: 23px;
+        width: 180px;
         margin-bottom: 15px;
+    }
+
+    .contacts__input {
+        height: 50px;
+        margin-bottom: 12px;
+        font-size: 17px;
+    }
+
+    .contacts__btn {
+        margin-top: 25px;
+    }
+
+
+
+
+    footer {
+        padding: 105px 0 5px 0;
+    }
+
+    .footer__logo {
+        margin-bottom: 12px;
+    }
+
+    .footer__logo-img {
+        width: 150px;
+    }
+
+    .footer__icons {
+        margin-bottom: 45px;
+    }
+
+    .footer__confidentiality {
+        margin-bottom: 20px;
     }
 }
 
